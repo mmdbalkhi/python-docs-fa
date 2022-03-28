@@ -1,176 +1,138 @@
-Translation of the Python Documentation — fa
+ترجمه مستندات پایتون — fa
 ============================================
 
 .. image:: https://travis-ci.org/python/python-docs-fa.svg?branch=3.7
   :target: https://travis-ci.org/python/python-docs-fa
 
-
-Documentation Contribution Agreement
-------------------------------------
-
-NOTE REGARDING THE LICENSE FOR TRANSLATIONS: Python's documentation is
-maintained using a global network of volunteers. By posting this
-project on Transifex, Github, and other public places, and inviting
-you to participate, we are proposing an agreement that you will
-provide your improvements to Python's documentation or the translation
-of Python's documentation for the PSF's use under the CC0 license
-(available at
-https://creativecommons.org/publicdomain/zero/1.0/legalcode). In
-return, you may publicly claim credit for the portion of the
-translation you contributed and if your translation is accepted by the
-PSF, you may (but are not required to) submit a patch including an
-appropriate annotation in the Misc/ACKS or TRANSLATORS file. Although
-nothing in this Documentation Contribution Agreement obligates the PSF
-to incorporate your textual contribution, your participation in the
-Python community is welcomed and appreciated.
-
-You signify acceptance of this agreement by submitting your work to
-the PSF for inclusion in the documentation.
-
-
-Contributing to the Translation
+مشارکت در ترجمه
 -------------------------------
 
-How to Contribute
+چگونه مشارکت کنیم؟
 ~~~~~~~~~~~~~~~~~
 
-You can contribute using:
+برای مشارکت در ترجمه تنها کافی است که  `یک ایشو در گیت‌هاب <https://github.com/mmdbalkhi/python-docs-fa/issues>`_ ایجاد کنید.
 
-- Github
-- `transifex <https://www.transifex.com/python-doc/public/>`_
-- Or just by opening `an issue on github <https://github.com/python/python-docs-fafr/issues>`_
-
-
-Contributing using Github
+مشارکت با استفاده از گیت هاب
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Prerequisites:
+پیش‌نیاز ها:
 
-- A `github account <https://github.com/join>`_.
-- ``git`` `installed <https://help.github.com/articles/set-up-git/>`_ (for windows, see
+- یک `حساب کاربری گیت‌هاب <https://github.com/join>`_.
+- ``git`` `نصب شده داشته باشید <https://help.github.com/articles/set-up-git/>`_ (برای ویندوز, این را ببینید
   https://gitforwindows.org/).
-- A ``.po`` file editor (Use `poedit <https://poedit.net/>`_
-  if you don't already have one).
+- یک ادیتور فایل ``.po`` (اگر هنوز گزینه ای را انتخاب نکرده اید، میتوانید از `poedit <https://poedit.net/>`_ استفاده کنید).
 
 
-Let's start:
+بیاین شروع کنیم:
 
-You'll need to fork the `python-docs-fa
-<https://github.com/python/python-docs-fa>`_ clicking its ``Fork``
-button. This creates a copy of the whole project on your github
-account: a place where you have the rights to do modifications.
+شما به یک فورک از  `python-docs-fa
+<https://github.com/mmdbalkhi/python-docs-fa>`_ نیاز دارید. بر روی دکمه ``Fork``
+کلیک کنید. این یک کپی از کل پروژه را در حساب کاربری گیت‌هاب شما ایجاد میکند. 
+اینجا جایی است که شما میتوانید در آن تغییر ایجاد کنید.
 
-Step by step:
+گام به گام:
 
 .. code-block:: bash
 
-    # Git clone your github fork using ssh (replace JulienPalard):
-    git clone git@github.com:JulienPalard/python-docs-fa.git
+    # کلون کردن فورک شما با توسط ssh (نام کاربری خودتان را با Username جایگزین کنید):
+    git clone git@github.com:Username/python-docs-fa.git
 
-    # Go to the cloned directory:
+    # به دایرکتوری کلون شده بروید:
     cd python-docs-fa/
 
-    # Add the upstream (the public repository) using HTTPS (won't ask for password):
-    git remote add upstream https://github.com/python/python-docs-fa.git
+    # مخزن اصلی را توسط HTTPS اضافه کنید(رمز عبوری از شما نخواهد پرسید):
+    git remote add upstream https://github.com/mmdbalkhi/python-docs-fa.git
 
-All the translations must be made on the latest release.
-We never translate on an oldest version, by example, the latest python release
-is python 3.7, we don't want to translate directly on the python 3.5 release.
-If needed translations would be backported on the oldest versions by the
-`documentation team <https://www.python.org/dev/peps/pep-8015/#documentation-team>`_.
+تمام ترجمه ها باید در آخرین نسخه انجام شوند.
+ما هرگز بر روی قدیمی ترین نسخه، به عنوان مثال، آخرین نسخه پایتون ترجمه نمی کنیم
+پایتون 3.9 است، ما نمی خواهیم مستقیماً در نسخه 3.5 پایتون ترجمه کنیم.
+در صورت نیاز، ترجمه‌ها بر روی قدیمی‌ترین نسخه‌ها توسط سازمان پشتیبانی می‌شوند.
+`تیم مستندسازی <https://www.python.org/dev/peps/pep-8015/#documentation-team>`_.
 
-Now you're ready to start a work session, each time you'll start a new task, start here:
+اکنون برای شروع یک جلسه کاری آماده هستید، هر بار که کار جدیدی را شروع می کنید، از اینجا شروع کنید:
 
 .. code-block:: bash
 
-    # To work, we'll need a branch, based on an up-to-date (freshly fetched)
-    # upstream/3.7 branch, let's say we'll work on glossary so we name
-    # the branch "glossary":
+    # برای کار، به یک شاخه بر اساس شاخه به‌روز (جدیدا fetch شده) نیاز داریم
+    # شاخه upstream/3.10، فرض کنید روی "glossary" کار می کنیم تا نام گذاری کنیم
+    # شاخه "glossary":
     git fetch upstream
     git checkout -b glossary upstream/3.7
 
-    # You can now work on the file, typically using poedit,
+    # اکنون می توانید روی فایل کار کنید.(معمولا از poedit استفاده میشود)
     poedit directory/file.po
 
-    # When everything is clear (syntax errors from Sphinx, html rendering,
-    # semantics, typography),
-    # you can commit your work with a nice explicit message:
+    # وقتی همه چیز واضح است (خطاهای نحوی از Sphinx، رندر html،
+    # معناشناسی، تایپوگرافی)،
+    # می توانید کار خود را با یک پیام صریح زیبا کامیت کنید:
     git commit -a -m "Working on glossary."
 
-    # Then push your modifications to your github clone,
-    # as they are ephemeral branches, let's not configure git to track them all,
-    # "origin HEAD" is a "special" syntax to say "Push on origin,
-    # on a branch with the same name as the local one",
-    # it's nice as it's exactly what we want:
+    # سپس تغییرات خود را به کلون github خود پوش کنید،
+    # چون شاخه های زودگذر هستند، اجازه دهید git را برای ردیابی همه آنها پیکربندی نکنیم،
+    # "origin HEAD" یک نحو "ویژه" برای گفتن "Push on origin" است،
+    # در شاخه ای با همان نام محلی،"
+    # خوب است زیرا دقیقاً همان چیزی است که ما می خواهیم:
     git push origin HEAD
 
-    # The previous command will print you a link to open a PR on github.
-    # If you missed it, just go to
-    # https://github.com/python/python-docs-fa/ and a nice "Compare & pull request"
-    # button should appear after a few seconds telling you can ask for a pull request.
+    # دستور قبلی یک پیوند برای باز کردن پول ریکوئست در github برای شما چاپ می کند.
+    # اگر آن را از دست دادید، فقط به آن بروید
+    # https://github.com/mmdbalkhi/python-docs-fa/ و یک "pull requests and compare" خوب
+    # دکمه باید بعد از چند ثانیه ظاهر شود و به شما بگوید می‌توانید pull reqyests ایجاد کنید.
 
-    # Now someone is reviewing your modifications, and you'll want to fix their
-    # findings, get back to your branch
-    # (in case you started something else on another branch):
+    # اکنون شخصی در حال بررسی تغییرات شما است و شما می خواهید آنها را اصلاح کنید
+    # یافته ها، به شاخه خود بازگردید
+    # (در صورتی که کار دیگری را در شاخه دیگری شروع کرده باشید):
     git checkout glossary
-    # Fix the issues, then commit again:
+    # مشکلات را برطرف و سپس دوباره کامیت کنید:
     git commit -a -m "glossary: small fixes."
     git push origin HEAD
 
+ممکن است متوجه شده باشید که این مشابه یک مثلث است و یک راس آن گم شده است:
 
-You may have noted that this looks like a triangle, with a missing segment:
+- شما در حال fetch کردن از upstream (مخزن عمومی عمومی در github) هستید
+- شما در حال پوش کردن به origin هستید (کلون شما در github)
 
-- You're fetching from upstream (public common repo on github)
-- You're pushing to origin (your clone on github)
+بنابراین بله، این کار کسی است که آخرین راس را از شما اضافه کند
+منشاء عمومی upstream برای "بستن حلقه"، این نقش است
+که pr های افراد را پس از تصحیح ادغام میکند.
 
-So yes it's the work of someone to add the last segment, from your
-origin to the public upstream, to "close the loop", that's the role of
-the people who merges pull requests after proofreading them.
-
-You may also have noted you never ever commit on a version branch
-(``3.6``, ``3.7``, ...), only pull from them, consider them read-only
-you'll avoid problems.
+همچنین ممکن است متوجه شده باشید که هرگز در یک شاخه نسخه تعهد نکرده اید
+(``3.6`, ``3.7``, ...)، فقط از آنها بیرون بکشید، آنها را فقط خواندنی در نظر بگیرید
+از مشکلات جلوگیری خواهید کرد 
 
 
-What to translate
+چه چیزی را ترجمه کنیم
+~~~~~~~~~~~~~~~~~~
+
+شما می توانید با کارهای آسانی مانند مرور ورودی های fuzzy برای کمک شروع کنید
+به روز نگه داشتن مستندات (آنها را با استفاده از "make fuzzy" پیدا کنید).
+
+همچنین می توانید مدخل های ترجمه شده قبلی را تصحیح کنید و در نهایت
+ترجمه‌نشده‌ها را ترجمه کنید (آنها را با استفاده از «make todo» پیدا کنید).
+
+- محتوای ``:ref:...`` و ``:term:...`` را ترجمه نکنید
+- کلمات انگلیسی را، اگر مجبور به استفاده از آنها هستید، با حروف *مورب* قرار دهید توسط ستاره ها).
+- اگر عنوان پیوند را ترجمه می کنید، لطفاً پیوند را نیز ترجمه کنید (معمولاً اگر ویکی پدیا باشد و مقاله ترجمه داشته باشد). اگر هیچ ترجمه ای از هدف وجود ندارد، آن را ترجمه نکنید
+
+از کجا کمک بگیریم
 ~~~~~~~~~~~~~~~~~
-
-You can start with easy tasks like reviewing fuzzy entries to help
-keeping the documentation up to date (find them using ``make fuzzy``).
-
-You can also proofread already translated entries, and finally
-translate untranslated ones (find them using ``make todo``)..
-
-- Do not translate content of ``:ref:...`` and ``:term:...``
-- Put english words, if you have to use them, in *italics* (surrounded
-  by stars).
-- If you translate a link title, please translate the link too
-  (typically if it's Wikipedia and the article has a translation). If
-  no translation of the target exists, do not translate the
-  title.
+میتوانید در بخش `بحث و گفت‌وگو گیت‌هاب <https://github.com/mmdbalkhi/python-docs-fa/discussions>`_ سوالات خود را بپرسید.
 
 
-Where to get help
-~~~~~~~~~~~~~~~~~
-
-
-Translation Resources
+منابع ترجمه
 ---------------------
 
 
-Glossary
+واژه نامه
 --------
 
-For consistency in our translations, here are some propositions and
-reminders for frequent terms you'll have to translate, don't hesitate
-to open an issue if you disagree.
+برای ثبات در ترجمه‌های ما، در اینجا چند گزاره و یادآوری برای اصطلاحات مکرر که باید ترجمه کنید، وجود دارد، در صورت مخالفت، از باز کردن موضوع دریغ نکنید.
 
-To easily find how a term is already translated in our documentation,
-you may use
+برای اینکه به راحتی بفهمید که چگونه یک اصطلاح قبلاً در اسناد ما ترجمه شده است، می توانید از آن استفاده کنید
 `find_in_po.py <https://gist.github.com/JulienPalard/c430ac23446da2081060ab17bf006ac1>`_.
 
 ========================== ===========================================
-Term                       Proposed Translation
+ اصطلاح                       ترجمه پیشنهادی
 ========================== ===========================================
 -like
 abstract data type
@@ -209,18 +171,17 @@ expression
 ========================== ===========================================
 
 
-Simplify git diffs
+git diff ها را ساده کنید.
 ------------------
 
-Git diffs are often crowded with useless line number changes, like:
+Git diff ها اغلب مملو از تغییرات بی‌فایده شماره خط هستند، مانند:
 
 .. code-block:: diff
 
     -#: ../Doc/library/signal.rst:406
     +#: ../Doc/library/signal.rst:408
 
-To tell git they are not usefull information, you can do the following
-after ensuring ``~/.local/bin/`` is in your ``PATH``.
+برای اینکه به git بگویید اطلاعات مفیدی نیستند، می‌توانید پس از اطمینان از اینکه ``~/.local/bin/`` در ``PATH`` شما قرار دارد، موارد زیر را انجام دهید.
 
 .. code-block:: bash
 
@@ -234,12 +195,12 @@ after ensuring ``~/.local/bin/`` is in your ``PATH``.
     git config diff.podiff.textconv podiff
 
 
-Maintenance
+نگهداری
 -----------
 
-All those snippets are to run from the root of a ``python-docs-fa``
-clone, and some expect to find an up-to-date CPython clone near to it,
-like:
+همه این قطعه‌ها از ریشه یک کلون ``python-docs-fa`` اجرا می‌شوند، و برخی انتظار دارند یک کلون به‌روز CPython را در نزدیکی آن پیدا کنند.
+
+مانند:
 
 .. code-block:: bash
 
@@ -247,17 +208,15 @@ like:
   ├── python-docs-fa/
   └── cpython/
 
-To clone CPython you may use:
+برای کلون کردن CPython می توانید از موارد زیر استفاده کنید:
 
 .. code-block:: bash
 
   git clone --depth 1 --no-single-branch https://github.com/python/cpython.git
 
-This avoids to download the whole history (not usefull to build
-documentation) but still fetches all branches.
+این از دانلود کل تاریخچه جلوگیری می کند (برای ساخت اسناد مفید نیست) اما همچنان همه شاخه ها را فتچ می کند.
 
-
-Merge pot files from CPython
+فایل های pot را از CPython ادغام کنید
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
@@ -265,7 +224,7 @@ Merge pot files from CPython
   make merge
 
 
-Find fuzzy strings
+رشته های fuzzy را پیدا کنید
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
@@ -273,30 +232,9 @@ Find fuzzy strings
   make fuzzy
 
 
-Run a test build locally
+یک بیلد برای آزمایشی به صورت محلی بسازید
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
   make
-
-
-Synchronize translation with Transifex
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You'll need the ``transifex-client`` and ``powrap``
-from Pypi.
-
-You'll need to configure ``tx`` via ``tx init`` if not already done.
-
-.. code-block:: bash
-
-   pomerge --from-files **/*.po
-   tx pull -f
-   pomerge --to-files **/*.po
-   pomerge --from-files **/*.po
-   git checkout -- .
-   pomerge --to-files **/*.po
-   powrap --modified
-   git commit -m "tx pull"
-   tx push -t -f
