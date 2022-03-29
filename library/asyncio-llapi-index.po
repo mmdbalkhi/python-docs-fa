@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,8 +61,7 @@ msgstr ""
 msgid "Create a new event loop."
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:32
-#: library/asyncio-llapi-index.rst:260
+#: library/asyncio-llapi-index.rst:32 library/asyncio-llapi-index.rst:260
 msgid "Examples"
 msgstr ""
 
@@ -688,8 +687,7 @@ msgstr ""
 msgid ":meth:`transport.abort() <WriteTransport.abort>`"
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:348
-#: library/asyncio-llapi-index.rst:370
+#: library/asyncio-llapi-index.rst:348 library/asyncio-llapi-index.rst:370
 msgid "Close the transport immediately."
 msgstr ""
 
@@ -859,8 +857,7 @@ msgstr ""
 msgid "``callback`` :meth:`eof_received() <Protocol.eof_received>`"
 msgstr ""
 
-#: library/asyncio-llapi-index.rst:437
-#: library/asyncio-llapi-index.rst:452
+#: library/asyncio-llapi-index.rst:437 library/asyncio-llapi-index.rst:452
 msgid "Called when an EOF is received."
 msgstr ""
 

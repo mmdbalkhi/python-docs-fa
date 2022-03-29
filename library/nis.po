@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,8 +53,7 @@ msgstr ""
 msgid "Note that *mapname* is first checked if it is an alias to another name."
 msgstr ""
 
-#: library/nis.rst:47
-#: library/nis.rst:55
+#: library/nis.rst:47 library/nis.rst:55
 msgid ""
 "The *domain* argument allows overriding the NIS domain used for the lookup. "
 "If unspecified, lookup is in the default NIS domain."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -264,12 +264,8 @@ msgstr ""
 msgid ":class:`c_byte`"
 msgstr ""
 
-#: library/ctypes.rst:226
-#: library/ctypes.rst:230
-#: library/ctypes.rst:234
-#: library/ctypes.rst:238
-#: library/ctypes.rst:242
-#: library/ctypes.rst:247
+#: library/ctypes.rst:226 library/ctypes.rst:230 library/ctypes.rst:234
+#: library/ctypes.rst:238 library/ctypes.rst:242 library/ctypes.rst:247
 msgid "int"
 msgstr ""
 
@@ -369,8 +365,7 @@ msgstr ""
 msgid ":c:type:`float`"
 msgstr ""
 
-#: library/ctypes.rst:252
-#: library/ctypes.rst:254
+#: library/ctypes.rst:252 library/ctypes.rst:254
 msgid "float"
 msgstr ""
 
@@ -2616,7 +2611,7 @@ msgstr ""
 #: library/ctypes.rst:2515
 msgid ""
 "The recommended way to create concrete array types is by multiplying any :"
-"mod:`ctypes` data type with a positive integer.  Alternatively, you can "
+"mod:`ctypes` data type with a non-negative integer.  Alternatively, you can "
 "subclass this type and define :attr:`_length_` and :attr:`_type_` class "
 "variables. Array elements can be read and written using standard subscript "
 "and slice accesses; for slice reads, the resulting object is *not* itself "

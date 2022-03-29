@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid ""
 "This invocation will install ``pip`` if it is not already installed, but "
 "otherwise does nothing. To ensure the installed version of ``pip`` is at "
-"least as recent as the one bundled with ``ensurepip``, pass the ``--"
+"least as recent as the one available in ``ensurepip``, pass the ``--"
 "upgrade`` option::"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 
 #: library/ensurepip.rst:89
 msgid ""
-"Returns a string specifying the bundled version of pip that will be "
+"Returns a string specifying the available version of pip that will be "
 "installed when bootstrapping an environment."
 msgstr ""
 
@@ -156,7 +156,7 @@ msgstr ""
 #: library/ensurepip.rst:102
 msgid ""
 "*upgrade* indicates whether or not to upgrade an existing installation of an "
-"earlier version of ``pip`` to the bundled version."
+"earlier version of ``pip`` to the available version."
 msgstr ""
 
 #: library/ensurepip.rst:105

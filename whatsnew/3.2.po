@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -908,9 +908,7 @@ msgid ""
 "filled in automatically."
 msgstr ""
 
-#: whatsnew/3.2.rst:834
-#: whatsnew/3.2.rst:899
-#: whatsnew/3.2.rst:1783
+#: whatsnew/3.2.rst:834 whatsnew/3.2.rst:899 whatsnew/3.2.rst:1783
 #: whatsnew/3.2.rst:1828
 msgid "(Contributed by Raymond Hettinger.)"
 msgstr ""
@@ -1930,8 +1928,7 @@ msgid ""
 "and a directory to start discovery with ``-s``:"
 msgstr ""
 
-#: whatsnew/3.2.rst:1763
-#: whatsnew/3.2.rst:1919
+#: whatsnew/3.2.rst:1763 whatsnew/3.2.rst:1919
 msgid "(Contributed by Michael Foord.)"
 msgstr ""
 
@@ -2162,7 +2159,7 @@ msgstr ""
 
 #: whatsnew/3.2.rst:1924
 msgid ""
-"The :mod:`pydoc` module now provides a much-improved Web server interface, "
+"The :mod:`pydoc` module now provides a much-improved web server interface, "
 "as well as a new command-line option ``-b`` to automatically open a browser "
 "window to display that server:"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,7 +217,7 @@ msgid ""
 "Python as well. Consult the :ref:`removed-in-python-39` section."
 msgstr ""
 
-#: whatsnew/3.9.rst:1275
+#: whatsnew/3.9.rst:1276
 msgid "New Features"
 msgstr ""
 
@@ -338,10 +338,10 @@ msgstr ""
 
 #: whatsnew/3.9.rst:234
 msgid ""
-"In the :ref:`Python Development Mode <devmode>` and in debug build, the "
-"*encoding* and *errors* arguments are now checked for string encoding and "
-"decoding operations. Examples: :func:`open`, :meth:`str.encode` and :meth:"
-"`bytes.decode`."
+"In the :ref:`Python Development Mode <devmode>` and in :ref:`debug build "
+"<debug-build>`, the *encoding* and *errors* arguments are now checked for "
+"string encoding and decoding operations. Examples: :func:`open`, :meth:`str."
+"encode` and :meth:`bytes.decode`."
 msgstr ""
 
 #: whatsnew/3.9.rst:239
@@ -1068,7 +1068,7 @@ msgid ""
 "(Contributed by Huon Wilson in :issue:`40630`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1497
+#: whatsnew/3.9.rst:1498
 msgid "typing"
 msgstr ""
 
@@ -1373,7 +1373,7 @@ msgid ""
 "(Contributed by Raymond Hettinger in :issue:`40465`)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1411
+#: whatsnew/3.9.rst:1412
 msgid "Removed"
 msgstr ""
 
@@ -1550,7 +1550,7 @@ msgid ""
 "unicode characters."
 msgstr ""
 
-#: whatsnew/3.9.rst:1337
+#: whatsnew/3.9.rst:1338
 msgid "Porting to Python 3.9"
 msgstr ""
 
@@ -1681,35 +1681,36 @@ msgstr ""
 
 #: whatsnew/3.9.rst:1156
 msgid ""
-"Instances of heap-allocated types (such as those created with :c:func:"
-"`PyType_FromSpec` and similar APIs) hold a reference to their type object "
-"since Python 3.8. As indicated in the \"Changes in the C API\" of Python "
-"3.8, for the vast majority of cases, there should be no side effect but for "
-"types that have a custom :c:member:`~PyTypeObject.tp_traverse` function, "
-"ensure that all custom ``tp_traverse`` functions of heap-allocated types "
-"visit the object's type."
+"Instances of :ref:`heap-allocated types <heap-types>` (such as those created "
+"with :c:func:`PyType_FromSpec` and similar APIs) hold a reference to their "
+"type object since Python 3.8. As indicated in the \"Changes in the C API\" "
+"of Python 3.8, for the vast majority of cases, there should be no side "
+"effect but for types that have a custom :c:member:`~PyTypeObject."
+"tp_traverse` function, ensure that all custom ``tp_traverse`` functions of "
+"heap-allocated types visit the object's type."
 msgstr ""
 
 #: whatsnew/3.9.rst:1177
 msgid ""
 "If your traverse function delegates to ``tp_traverse`` of its base class (or "
 "another type), ensure that ``Py_TYPE(self)`` is visited only once. Note that "
-"only heap types are expected to visit the type in ``tp_traverse``."
+"only :ref:`heap type <heap-types>` are expected to visit the type in "
+"``tp_traverse``."
 msgstr ""
 
-#: whatsnew/3.9.rst:1181
+#: whatsnew/3.9.rst:1182
 msgid "For example, if your ``tp_traverse`` function includes:"
 msgstr ""
 
-#: whatsnew/3.9.rst:1187
+#: whatsnew/3.9.rst:1188
 msgid "then add:"
 msgstr ""
 
-#: whatsnew/3.9.rst:1200
+#: whatsnew/3.9.rst:1201
 msgid "(See :issue:`35810` and :issue:`40217` for more information.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1202
+#: whatsnew/3.9.rst:1203
 msgid ""
 "The functions ``PyEval_CallObject``, ``PyEval_CallFunction``, "
 "``PyEval_CallMethod`` and ``PyEval_CallObjectWithKeywords`` are deprecated. "
@@ -1717,11 +1718,11 @@ msgid ""
 "issue:`29548`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1208
+#: whatsnew/3.9.rst:1209
 msgid "CPython bytecode changes"
 msgstr ""
 
-#: whatsnew/3.9.rst:1210
+#: whatsnew/3.9.rst:1211
 msgid ""
 "The :opcode:`LOAD_ASSERTION_ERROR` opcode was added for handling the :"
 "keyword:`assert` statement. Previously, the assert statement would not work "
@@ -1729,37 +1730,37 @@ msgid ""
 "(Contributed by Zackery Spytz in :issue:`34880`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1215
+#: whatsnew/3.9.rst:1216
 msgid ""
 "The :opcode:`COMPARE_OP` opcode was split into four distinct instructions:"
 msgstr ""
 
-#: whatsnew/3.9.rst:1217
+#: whatsnew/3.9.rst:1218
 msgid "``COMPARE_OP`` for rich comparisons"
 msgstr ""
 
-#: whatsnew/3.9.rst:1218
+#: whatsnew/3.9.rst:1219
 msgid "``IS_OP`` for 'is' and 'is not' tests"
 msgstr ""
 
-#: whatsnew/3.9.rst:1219
+#: whatsnew/3.9.rst:1220
 msgid "``CONTAINS_OP`` for 'in' and 'not in' tests"
 msgstr ""
 
-#: whatsnew/3.9.rst:1220
+#: whatsnew/3.9.rst:1221
 msgid ""
 "``JUMP_IF_NOT_EXC_MATCH`` for checking exceptions in 'try-except' statements."
 msgstr ""
 
-#: whatsnew/3.9.rst:1223
+#: whatsnew/3.9.rst:1224
 msgid "(Contributed by Mark Shannon in :issue:`39156`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1227
+#: whatsnew/3.9.rst:1228
 msgid "Build Changes"
 msgstr ""
 
-#: whatsnew/3.9.rst:1229
+#: whatsnew/3.9.rst:1230
 msgid ""
 "Added ``--with-platlibdir`` option to the ``configure`` script: name of the "
 "platform-specific library directory, stored in the new :attr:`sys."
@@ -1768,43 +1769,43 @@ msgid ""
 "and Victor Stinner in :issue:`1294959`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1235
+#: whatsnew/3.9.rst:1236
 msgid ""
 "The ``COUNT_ALLOCS`` special build macro has been removed. (Contributed by "
 "Victor Stinner in :issue:`39489`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1238
+#: whatsnew/3.9.rst:1239
 msgid ""
 "On non-Windows platforms, the :c:func:`setenv` and :c:func:`unsetenv` "
 "functions are now required to build Python. (Contributed by Victor Stinner "
 "in :issue:`39395`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1242
+#: whatsnew/3.9.rst:1243
 msgid ""
 "On non-Windows platforms, creating ``bdist_wininst`` installers is now "
 "officially unsupported.  (See :issue:`10945` for more details.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1245
+#: whatsnew/3.9.rst:1246
 msgid ""
 "When building Python on macOS from source, ``_tkinter`` now links with non-"
 "system Tcl and Tk frameworks if they are installed in ``/Library/"
 "Frameworks``, as had been the case on older releases of macOS. If a macOS "
-"SDK is explicitly configured, by using ``--enable-universalsdk=`` or ``-"
+"SDK is explicitly configured, by using :option:`--enable-universalsdk` or ``-"
 "isysroot``, only the SDK itself is searched. The default behavior can still "
-"be overridden with ``--with-tcltk-includes`` and ``--with-tcltk-libs``. "
-"(Contributed by Ned Deily in :issue:`34956`.)"
+"be overridden with :option:`--with-tcltk-includes` and :option:`--with-tcltk-"
+"libs`. (Contributed by Ned Deily in :issue:`34956`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1254
+#: whatsnew/3.9.rst:1255
 msgid ""
 "Python can now be built for Windows 10 ARM64. (Contributed by Steve Dower "
 "in :issue:`33125`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1257
+#: whatsnew/3.9.rst:1258
 msgid ""
 "Some individual tests are now skipped when ``--pgo`` is used.  The tests in "
 "question increased the PGO task time significantly and likely didn't help "
@@ -1820,11 +1821,11 @@ msgid ""
 "details.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1272
+#: whatsnew/3.9.rst:1273
 msgid "C API Changes"
 msgstr ""
 
-#: whatsnew/3.9.rst:1277
+#: whatsnew/3.9.rst:1278
 msgid ""
 ":pep:`573`: Added :c:func:`PyType_FromModuleAndSpec` to associate a module "
 "with a class; :c:func:`PyType_GetModule` and :c:func:`PyType_GetModuleState` "
@@ -1833,20 +1834,20 @@ msgid ""
 "(Contributed by Marcel Plch and Petr Viktorin in :issue:`38787`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1284
+#: whatsnew/3.9.rst:1285
 msgid ""
 "Added :c:func:`PyFrame_GetCode` function: get a frame code. Added :c:func:"
 "`PyFrame_GetBack` function: get the frame next outer frame. (Contributed by "
 "Victor Stinner in :issue:`40421`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1288
+#: whatsnew/3.9.rst:1289
 msgid ""
 "Added :c:func:`PyFrame_GetLineNumber` to the limited C API. (Contributed by "
 "Victor Stinner in :issue:`40421`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1291
+#: whatsnew/3.9.rst:1292
 msgid ""
 "Added :c:func:`PyThreadState_GetInterpreter` and :c:func:"
 "`PyInterpreterState_Get` functions to get the interpreter. Added :c:func:"
@@ -1856,7 +1857,7 @@ msgid ""
 "issue:`39947`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1299
+#: whatsnew/3.9.rst:1300
 msgid ""
 "Added a new public :c:func:`PyObject_CallNoArgs` function to the C API, "
 "which calls a callable Python object without any arguments. It is the most "
@@ -1864,11 +1865,11 @@ msgid ""
 "(Contributed by Victor Stinner in :issue:`37194`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1422
+#: whatsnew/3.9.rst:1423
 msgid "Changes in the limited C API (if ``Py_LIMITED_API`` macro is defined):"
 msgstr ""
 
-#: whatsnew/3.9.rst:1306
+#: whatsnew/3.9.rst:1307
 msgid ""
 "Provide :c:func:`Py_EnterRecursiveCall` and :c:func:`Py_LeaveRecursiveCall` "
 "as regular functions for the limited API. Previously, there were defined as "
@@ -1877,23 +1878,23 @@ msgid ""
 "the limited C API)."
 msgstr ""
 
-#: whatsnew/3.9.rst:1312
+#: whatsnew/3.9.rst:1313
 msgid ""
 "``PyObject_INIT()`` and ``PyObject_INIT_VAR()`` become regular \"opaque\" "
 "function to hide implementation details."
 msgstr ""
 
-#: whatsnew/3.9.rst:1449
+#: whatsnew/3.9.rst:1450
 msgid "(Contributed by Victor Stinner in :issue:`38644` and :issue:`39542`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1317
+#: whatsnew/3.9.rst:1318
 msgid ""
 "The :c:func:`PyModule_AddType` function is added to help adding a type to a "
 "module. (Contributed by Dong-hee Na in :issue:`40024`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1321
+#: whatsnew/3.9.rst:1322
 msgid ""
 "Added the functions :c:func:`PyObject_GC_IsTracked` and :c:func:"
 "`PyObject_GC_IsFinalized` to the public API to allow to query if Python "
@@ -1902,27 +1903,27 @@ msgid ""
 "issue:`40241`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1327
+#: whatsnew/3.9.rst:1328
 msgid ""
 "Added :c:func:`_PyObject_FunctionStr` to get a user-friendly string "
 "representation of a function-like object. (Patch by Jeroen Demeyer in :issue:"
 "`37645`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1331
+#: whatsnew/3.9.rst:1332
 msgid ""
 "Added :c:func:`PyObject_CallOneArg` for calling an object with one "
 "positional argument (Patch by Jeroen Demeyer in :issue:`37483`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1339
+#: whatsnew/3.9.rst:1340
 msgid ""
 "``PyInterpreterState.eval_frame`` (:pep:`523`) now requires a new mandatory "
 "*tstate* parameter (``PyThreadState*``). (Contributed by Victor Stinner in :"
 "issue:`38500`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1343
+#: whatsnew/3.9.rst:1344
 msgid ""
 "Extension modules: :c:member:`~PyModuleDef.m_traverse`, :c:member:"
 "`~PyModuleDef.m_clear` and :c:member:`~PyModuleDef.m_free` functions of :c:"
@@ -1934,12 +1935,12 @@ msgid ""
 "`PyModule_GetState`) is ``NULL``."
 msgstr ""
 
-#: whatsnew/3.9.rst:1352
+#: whatsnew/3.9.rst:1353
 msgid ""
 "Extension modules without module state (``m_size <= 0``) are not affected."
 msgstr ""
 
-#: whatsnew/3.9.rst:1354
+#: whatsnew/3.9.rst:1355
 msgid ""
 "If :c:func:`Py_AddPendingCall` is called in a subinterpreter, the function "
 "is now scheduled to be called from the subinterpreter, rather than being "
@@ -1947,7 +1948,7 @@ msgid ""
 "of scheduled calls. (Contributed by Victor Stinner in :issue:`39984`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1360
+#: whatsnew/3.9.rst:1361
 msgid ""
 "The Windows registry is no longer used to initialize :data:`sys.path` when "
 "the ``-E`` option is used (if :c:member:`PyConfig.use_environment` is set to "
@@ -1955,21 +1956,21 @@ msgid ""
 "by Zackery Spytz in :issue:`8901`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1365
+#: whatsnew/3.9.rst:1366
 msgid ""
 "The global variable :c:data:`PyStructSequence_UnnamedField` is now a "
 "constant and refers to a constant string. (Contributed by Serhiy Storchaka "
 "in :issue:`38650`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1369
+#: whatsnew/3.9.rst:1370
 msgid ""
 "The :c:type:`PyGC_Head` structure is now opaque. It is only defined in the "
 "internal C API (``pycore_gc.h``). (Contributed by Victor Stinner in :issue:"
 "`40241`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1373
+#: whatsnew/3.9.rst:1374
 msgid ""
 "The ``Py_UNICODE_COPY``, ``Py_UNICODE_FILL``, ``PyUnicode_WSTR_LENGTH``, :c:"
 "func:`PyUnicode_FromUnicode`, :c:func:`PyUnicode_AsUnicode`, "
@@ -1978,7 +1979,7 @@ msgid ""
 "Python 3.3. (Contributed by Inada Naoki in :issue:`36346`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1380
+#: whatsnew/3.9.rst:1381
 msgid ""
 "The :c:func:`Py_FatalError` function is replaced with a macro which logs "
 "automatically the name of the current function, unless the "
@@ -1986,22 +1987,22 @@ msgid ""
 "issue:`39882`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1385
+#: whatsnew/3.9.rst:1386
 msgid ""
 "The vectorcall protocol now requires that the caller passes only strings as "
 "keyword names. (See :issue:`37540` for more information.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1388
+#: whatsnew/3.9.rst:1389
 msgid ""
 "Implementation details of a number of macros and functions are now hidden:"
 msgstr ""
 
-#: whatsnew/3.9.rst:1390
+#: whatsnew/3.9.rst:1391
 msgid ":c:func:`PyObject_IS_GC` macro was converted to a function."
 msgstr ""
 
-#: whatsnew/3.9.rst:1392
+#: whatsnew/3.9.rst:1393
 msgid ""
 "The :c:func:`PyObject_NEW` macro becomes an alias to the :c:func:"
 "`PyObject_New` macro, and the :c:func:`PyObject_NEW_VAR` macro becomes an "
@@ -2009,38 +2010,38 @@ msgid ""
 "the :c:member:`PyTypeObject.tp_basicsize` member."
 msgstr ""
 
-#: whatsnew/3.9.rst:1397
+#: whatsnew/3.9.rst:1398
 msgid ""
 ":c:func:`PyObject_GET_WEAKREFS_LISTPTR` macro was converted to a function: "
 "the macro accessed directly the :c:member:`PyTypeObject.tp_weaklistoffset` "
 "member."
 msgstr ""
 
-#: whatsnew/3.9.rst:1401
+#: whatsnew/3.9.rst:1402
 msgid ""
 ":c:func:`PyObject_CheckBuffer` macro was converted to a function: the macro "
 "accessed directly the :c:member:`PyTypeObject.tp_as_buffer` member."
 msgstr ""
 
-#: whatsnew/3.9.rst:1404
+#: whatsnew/3.9.rst:1405
 msgid ""
 ":c:func:`PyIndex_Check` is now always declared as an opaque function to hide "
 "implementation details: removed the ``PyIndex_Check()`` macro. The macro "
 "accessed directly the :c:member:`PyTypeObject.tp_as_number` member."
 msgstr ""
 
-#: whatsnew/3.9.rst:1408
+#: whatsnew/3.9.rst:1409
 msgid "(See :issue:`40170` for more details.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1413
+#: whatsnew/3.9.rst:1414
 msgid ""
 "Excluded ``PyFPE_START_PROTECT()`` and ``PyFPE_END_PROTECT()`` macros of "
 "``pyfpe.h`` from the limited C API. (Contributed by Victor Stinner in :issue:"
 "`38835`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1417
+#: whatsnew/3.9.rst:1418
 msgid ""
 "The ``tp_print`` slot of :ref:`PyTypeObject <type-structs>` has been "
 "removed. It was used for printing objects to files in Python 2.7 and before. "
@@ -2048,89 +2049,89 @@ msgid ""
 "Demeyer in :issue:`36974`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1424
+#: whatsnew/3.9.rst:1425
 msgid "Excluded the following functions from the limited C API:"
 msgstr ""
 
-#: whatsnew/3.9.rst:1426
+#: whatsnew/3.9.rst:1427
 msgid ""
 "``PyThreadState_DeleteCurrent()`` (Contributed by Joannah Nanjekye in :issue:"
 "`37878`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1428
+#: whatsnew/3.9.rst:1429
 msgid "``_Py_CheckRecursionLimit``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1429
+#: whatsnew/3.9.rst:1430
 msgid "``_Py_NewReference()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1430
+#: whatsnew/3.9.rst:1431
 msgid "``_Py_ForgetReference()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1431
+#: whatsnew/3.9.rst:1432
 msgid "``_PyTraceMalloc_NewReference()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1432
+#: whatsnew/3.9.rst:1433
 msgid "``_Py_GetRefTotal()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1433
+#: whatsnew/3.9.rst:1434
 msgid "The trashcan mechanism which never worked in the limited C API."
 msgstr ""
 
-#: whatsnew/3.9.rst:1434
+#: whatsnew/3.9.rst:1435
 msgid "``PyTrash_UNWIND_LEVEL``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1435
+#: whatsnew/3.9.rst:1436
 msgid "``Py_TRASHCAN_BEGIN_CONDITION``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1436
+#: whatsnew/3.9.rst:1437
 msgid "``Py_TRASHCAN_BEGIN``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1437
+#: whatsnew/3.9.rst:1438
 msgid "``Py_TRASHCAN_END``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1438
+#: whatsnew/3.9.rst:1439
 msgid "``Py_TRASHCAN_SAFE_BEGIN``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1439
+#: whatsnew/3.9.rst:1440
 msgid "``Py_TRASHCAN_SAFE_END``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1441
+#: whatsnew/3.9.rst:1442
 msgid "Moved following functions and definitions to the internal C API:"
 msgstr ""
 
-#: whatsnew/3.9.rst:1443
+#: whatsnew/3.9.rst:1444
 msgid "``_PyDebug_PrintTotalRefs()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1444
+#: whatsnew/3.9.rst:1445
 msgid "``_Py_PrintReferences()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1445
+#: whatsnew/3.9.rst:1446
 msgid "``_Py_PrintReferenceAddresses()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1446
+#: whatsnew/3.9.rst:1447
 msgid "``_Py_tracemalloc_config``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1447
+#: whatsnew/3.9.rst:1448
 msgid "``_Py_AddToAllObjects()`` (specific to ``Py_TRACE_REFS`` build)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1451
+#: whatsnew/3.9.rst:1452
 msgid ""
 "Removed ``_PyRuntime.getframe`` hook and removed ``_PyThreadState_GetFrame`` "
 "macro which was an alias to ``_PyRuntime.getframe``. They were only exposed "
@@ -2138,72 +2139,72 @@ msgid ""
 "(Contributed by Victor Stinner in :issue:`39946`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1456
+#: whatsnew/3.9.rst:1457
 msgid ""
 "Removed the following functions from the C API. Call :c:func:`PyGC_Collect` "
 "explicitly to clear all free lists. (Contributed by Inada Naoki and Victor "
 "Stinner in :issue:`37340`, :issue:`38896` and :issue:`40428`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1461
+#: whatsnew/3.9.rst:1462
 msgid "``PyAsyncGen_ClearFreeLists()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1462
+#: whatsnew/3.9.rst:1463
 msgid "``PyContext_ClearFreeList()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1463
+#: whatsnew/3.9.rst:1464
 msgid "``PyDict_ClearFreeList()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1464
+#: whatsnew/3.9.rst:1465
 msgid "``PyFloat_ClearFreeList()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1465
+#: whatsnew/3.9.rst:1466
 msgid "``PyFrame_ClearFreeList()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1466
+#: whatsnew/3.9.rst:1467
 msgid "``PyList_ClearFreeList()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1467
+#: whatsnew/3.9.rst:1468
 msgid ""
 "``PyMethod_ClearFreeList()`` and ``PyCFunction_ClearFreeList()``: the free "
 "lists of bound method objects have been removed."
 msgstr ""
 
-#: whatsnew/3.9.rst:1469
+#: whatsnew/3.9.rst:1470
 msgid ""
 "``PySet_ClearFreeList()``: the set free list has been removed in Python 3.4."
 msgstr ""
 
-#: whatsnew/3.9.rst:1471
+#: whatsnew/3.9.rst:1472
 msgid "``PyTuple_ClearFreeList()``"
 msgstr ""
 
-#: whatsnew/3.9.rst:1472
+#: whatsnew/3.9.rst:1473
 msgid ""
 "``PyUnicode_ClearFreeList()``: the Unicode free list has been removed in "
 "Python 3.3."
 msgstr ""
 
-#: whatsnew/3.9.rst:1475
+#: whatsnew/3.9.rst:1476
 msgid ""
 "Removed ``_PyUnicode_ClearStaticStrings()`` function. (Contributed by Victor "
 "Stinner in :issue:`39465`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1478
+#: whatsnew/3.9.rst:1479
 msgid ""
 "Removed ``Py_UNICODE_MATCH``. It has been deprecated by :pep:`393`, and "
 "broken since Python 3.3. The :c:func:`PyUnicode_Tailmatch` function can be "
 "used instead. (Contributed by Inada Naoki in :issue:`36346`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1483
+#: whatsnew/3.9.rst:1484
 msgid ""
 "Cleaned header files of interfaces defined but with no implementation. The "
 "public API symbols being removed are: "
@@ -2216,26 +2217,26 @@ msgid ""
 "`39372`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1494
+#: whatsnew/3.9.rst:1495
 msgid "Notable changes in Python 3.9.1"
 msgstr ""
 
-#: whatsnew/3.9.rst:1499
+#: whatsnew/3.9.rst:1500
 msgid ""
 "The behavior of :class:`typing.Literal` was changed to conform with :pep:"
 "`586` and to match the behavior of static type checkers specified in the PEP."
 msgstr ""
 
-#: whatsnew/3.9.rst:1502
+#: whatsnew/3.9.rst:1503
 msgid "``Literal`` now de-duplicates parameters."
 msgstr ""
 
-#: whatsnew/3.9.rst:1503
+#: whatsnew/3.9.rst:1504
 msgid ""
 "Equality comparisons between ``Literal`` objects are now order independent."
 msgstr ""
 
-#: whatsnew/3.9.rst:1504
+#: whatsnew/3.9.rst:1505
 msgid ""
 "``Literal`` comparisons now respect types.  For example, ``Literal[0] == "
 "Literal[False]`` previously evaluated to ``True``.  It is now ``False``.  To "
@@ -2243,7 +2244,7 @@ msgid ""
 "differentiating types."
 msgstr ""
 
-#: whatsnew/3.9.rst:1508
+#: whatsnew/3.9.rst:1509
 msgid ""
 "``Literal`` objects will now raise a :exc:`TypeError` exception during "
 "equality comparisons if any of their parameters are not :term:`hashable`. "
@@ -2251,15 +2252,15 @@ msgid ""
 "error::"
 msgstr ""
 
-#: whatsnew/3.9.rst:1520
+#: whatsnew/3.9.rst:1521
 msgid "(Contributed by Yurii Karabas in :issue:`42345`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1523
+#: whatsnew/3.9.rst:1524
 msgid "macOS 11.0 (Big Sur) and Apple Silicon Mac support"
 msgstr ""
 
-#: whatsnew/3.9.rst:1525
+#: whatsnew/3.9.rst:1526
 msgid ""
 "As of 3.9.1, Python now fully supports building and running on macOS 11.0 "
 "(Big Sur) and on Apple Silicon Macs (based on the ``ARM64`` architecture). A "
@@ -2271,19 +2272,19 @@ msgid ""
 "version in use at runtime (\"weaklinking\")."
 msgstr ""
 
-#: whatsnew/3.9.rst:1534
+#: whatsnew/3.9.rst:1535
 msgid "(Contributed by Ronald Oussoren and Lawrence D'Anna in :issue:`41100`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1537
+#: whatsnew/3.9.rst:1538
 msgid "Notable changes in Python 3.9.2"
 msgstr ""
 
-#: whatsnew/3.9.rst:1540
+#: whatsnew/3.9.rst:1541
 msgid "collections.abc"
 msgstr ""
 
-#: whatsnew/3.9.rst:1542
+#: whatsnew/3.9.rst:1543
 msgid ""
 ":class:`collections.abc.Callable` generic now flattens type parameters, "
 "similar to what :data:`typing.Callable` currently does.  This means that "
@@ -2299,11 +2300,11 @@ msgid ""
 "Python 3.10. (Contributed by Ken Jin in :issue:`42195`.)"
 msgstr ""
 
-#: whatsnew/3.9.rst:1581
+#: whatsnew/3.9.rst:1557
 msgid "urllib.parse"
 msgstr ""
 
-#: whatsnew/3.9.rst:1558
+#: whatsnew/3.9.rst:1559
 msgid ""
 "Earlier Python versions allowed using both ``;`` and ``&`` as query "
 "parameter separators in :func:`urllib.parse.parse_qs` and :func:`urllib."
@@ -2313,31 +2314,4 @@ msgid ""
 "func:`cgi.parse_multipart` as they use the affected functions internally. "
 "For more details, please see their respective documentation. (Contributed by "
 "Adam Goldschmidt, Senthil Kumaran and Ken Jin in :issue:`42967`.)"
-msgstr ""
-
-#: whatsnew/3.9.rst:1569
-msgid "Notable changes in Python 3.9.3"
-msgstr ""
-
-#: whatsnew/3.9.rst:1571
-msgid ""
-"A security fix alters the :class:`ftplib.FTP` behavior to not trust the IPv4 "
-"address sent from the remote server when setting up a passive data channel.  "
-"We reuse the ftp server IP address instead.  For unusual code requiring the "
-"old behavior, set a ``trust_server_pasv_ipv4_address`` attribute on your FTP "
-"instance to ``True``.  (See :issue:`43285`)"
-msgstr ""
-
-#: whatsnew/3.9.rst:1578
-msgid "Notable changes in Python 3.9.5"
-msgstr ""
-
-#: whatsnew/3.9.rst:1583
-msgid ""
-"The presence of newline or tab characters in parts of a URL allows for some "
-"forms of attacks. Following the WHATWG specification that updates :rfc:"
-"`3986`, ASCII newline ``\\n``, ``\\r`` and tab ``\\t`` characters are "
-"stripped from the URL by the parser in :mod:`urllib.parse` preventing such "
-"attacks. The removal characters are controlled by a new module level "
-"variable ``urllib.parse._UNSAFE_URL_BYTES_TO_REMOVE``. (See :issue:`43882`)"
 msgstr ""

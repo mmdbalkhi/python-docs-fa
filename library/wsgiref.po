@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,8 +154,7 @@ msgid ""
 "actual WSGI servers or applications, since the data is fake!"
 msgstr ""
 
-#: library/wsgiref.rst:164
-#: library/wsgiref.rst:418
+#: library/wsgiref.rst:164 library/wsgiref.rst:418
 msgid "Example usage::"
 msgstr ""
 

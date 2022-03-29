@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,8 +307,8 @@ msgstr ""
 
 #: c-api/object.rst:301
 msgid ""
-"Return true if the object *o* is of type *type* or a subtype of *type*.  "
-"Both parameters must be non-``NULL``."
+"Return non-zero if the object *o* is of type *type* or a subtype of *type*, "
+"and ``0`` otherwise.  Both parameters must be non-``NULL``."
 msgstr ""
 
 #: c-api/object.rst:310
@@ -363,4 +363,13 @@ msgid ""
 "iterator for the object argument, or the object  itself if the object is "
 "already an iterator.  Raises :exc:`TypeError` and returns ``NULL`` if the "
 "object cannot be iterated."
+msgstr ""
+
+#: c-api/object.rst:364
+msgid ""
+"This is the equivalent to the Python expression ``aiter(o)``. Takes an :"
+"class:`AsyncIterable` object and returns an :class:`AsyncIterator` for it. "
+"This is typically a new iterator but if the argument is an :class:"
+"`AsyncIterator`, this returns itself. Raises :exc:`TypeError` and returns "
+"``NULL`` if the object cannot be iterated."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,12 +136,8 @@ msgstr ""
 msgid "Timer signal from :manpage:`alarm(2)`."
 msgstr ""
 
-#: library/signal.rst:114
-#: library/signal.rst:130
-#: library/signal.rst:162
-#: library/signal.rst:184
-#: library/signal.rst:196
-#: library/signal.rst:454
+#: library/signal.rst:114 library/signal.rst:130 library/signal.rst:162
+#: library/signal.rst:184 library/signal.rst:196 library/signal.rst:454
 msgid ":ref:`Availability <availability>`: Unix."
 msgstr ""
 
@@ -149,8 +145,7 @@ msgstr ""
 msgid "Interrupt from keyboard (CTRL + BREAK)."
 msgstr ""
 
-#: library/signal.rst:215
-#: library/signal.rst:225
+#: library/signal.rst:215 library/signal.rst:225
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ""
 
@@ -491,7 +486,7 @@ msgstr ""
 #: library/signal.rst:421
 msgid ""
 ":ref:`Availability <availability>`: Unix.  See the man page :manpage:"
-"`sigprocmask(3)` and :manpage:`pthread_sigmask(3)` for further information."
+"`sigprocmask(2)` and :manpage:`pthread_sigmask(3)` for further information."
 msgstr ""
 
 #: library/signal.rst:422

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -699,8 +699,7 @@ msgstr ""
 msgid "``\\d``"
 msgstr ""
 
-#: library/re.rst:509
-#: library/re.rst:529
+#: library/re.rst:509 library/re.rst:529
 msgid "For Unicode (str) patterns:"
 msgstr ""
 
@@ -712,8 +711,7 @@ msgid ""
 "matched."
 msgstr ""
 
-#: library/re.rst:513
-#: library/re.rst:535
+#: library/re.rst:513 library/re.rst:535
 msgid "For 8-bit (bytes) patterns:"
 msgstr ""
 
@@ -1069,8 +1067,7 @@ msgid ""
 "previous empty match."
 msgstr ""
 
-#: library/re.rst:907
-#: library/re.rst:931
+#: library/re.rst:907 library/re.rst:931
 msgid "Added the optional flags argument."
 msgstr ""
 
@@ -1155,8 +1152,7 @@ msgid ""
 "RE."
 msgstr ""
 
-#: library/re.rst:934
-#: library/re.rst:1165
+#: library/re.rst:934 library/re.rst:1165
 msgid "Unmatched groups are replaced with an empty string."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid ":func:`to_thread`"
 msgstr ""
 
 #: library/asyncio-api-index.rst:52
-msgid "Asychronously run a function in a separate OS thread."
+msgid "Asynchronously run a function in a separate OS thread."
 msgstr ""
 
 #: library/asyncio-api-index.rst:54
@@ -139,12 +139,9 @@ msgstr ""
 msgid "Monitor for completion with a ``for`` loop."
 msgstr ""
 
-#: library/asyncio-api-index.rst:62
-#: library/asyncio-api-index.rst:98
-#: library/asyncio-api-index.rst:122
-#: library/asyncio-api-index.rst:158
-#: library/asyncio-api-index.rst:191
-#: library/asyncio-api-index.rst:216
+#: library/asyncio-api-index.rst:62 library/asyncio-api-index.rst:98
+#: library/asyncio-api-index.rst:122 library/asyncio-api-index.rst:158
+#: library/asyncio-api-index.rst:191 library/asyncio-api-index.rst:216
 msgid "Examples"
 msgstr ""
 

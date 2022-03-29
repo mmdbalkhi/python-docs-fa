@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,11 +59,8 @@ msgstr ""
 msgid "signed char"
 msgstr ""
 
-#: library/array.rst:23
-#: library/array.rst:29
-#: library/array.rst:33
-#: library/array.rst:37
-#: library/array.rst:41
+#: library/array.rst:23 library/array.rst:29 library/array.rst:33
+#: library/array.rst:37 library/array.rst:41
 msgid "int"
 msgstr ""
 
@@ -91,9 +88,7 @@ msgstr ""
 msgid "Unicode character"
 msgstr ""
 
-#: library/array.rst:27
-#: library/array.rst:31
-#: library/array.rst:33
+#: library/array.rst:27 library/array.rst:31 library/array.rst:33
 msgid "2"
 msgstr ""
 
@@ -141,8 +136,7 @@ msgstr ""
 msgid "signed long"
 msgstr ""
 
-#: library/array.rst:37
-#: library/array.rst:43
+#: library/array.rst:37 library/array.rst:43
 msgid "4"
 msgstr ""
 
@@ -162,8 +156,7 @@ msgstr ""
 msgid "signed long long"
 msgstr ""
 
-#: library/array.rst:41
-#: library/array.rst:45
+#: library/array.rst:41 library/array.rst:45
 msgid "8"
 msgstr ""
 
@@ -345,57 +338,63 @@ msgstr ""
 #: library/array.rst:182
 msgid ""
 "Return the smallest *i* such that *i* is the index of the first occurrence "
-"of *x* in the array."
+"of *x* in the array.  The optional arguments *start* and *stop* can be "
+"specified to search for *x* within a subsection of the array.  Raise :exc:"
+"`ValueError` if *x* is not found."
 msgstr ""
 
-#: library/array.rst:188
+#: library/array.rst:187
+msgid "Added optional *start* and *stop* parameters."
+msgstr ""
+
+#: library/array.rst:192
 msgid ""
 "Insert a new item with value *x* in the array before position *i*. Negative "
 "values are treated as being relative to the end of the array."
 msgstr ""
 
-#: library/array.rst:194
+#: library/array.rst:198
 msgid ""
 "Removes the item with the index *i* from the array and returns it. The "
 "optional argument defaults to ``-1``, so that by default the last item is "
 "removed and returned."
 msgstr ""
 
-#: library/array.rst:201
+#: library/array.rst:205
 msgid "Remove the first occurrence of *x* from the array."
 msgstr ""
 
-#: library/array.rst:206
+#: library/array.rst:210
 msgid "Reverse the order of the items in the array."
 msgstr ""
 
-#: library/array.rst:211
+#: library/array.rst:215
 msgid ""
 "Convert the array to an array of machine values and return the bytes "
 "representation (the same sequence of bytes that would be written to a file "
 "by the :meth:`tofile` method.)"
 msgstr ""
 
-#: library/array.rst:215
+#: library/array.rst:219
 msgid ":meth:`tostring` is renamed to :meth:`tobytes` for clarity."
 msgstr ""
 
-#: library/array.rst:221
+#: library/array.rst:225
 msgid "Write all items (as machine values) to the :term:`file object` *f*."
 msgstr ""
 
-#: library/array.rst:226
+#: library/array.rst:230
 msgid "Convert the array to an ordinary list with the same items."
 msgstr ""
 
-#: library/array.rst:231
+#: library/array.rst:235
 msgid ""
 "Convert the array to a unicode string.  The array must be a type ``'u'`` "
 "array; otherwise a :exc:`ValueError` is raised. Use ``array.tobytes()."
 "decode(enc)`` to obtain a unicode string from an array of some other type."
 msgstr ""
 
-#: library/array.rst:236
+#: library/array.rst:240
 msgid ""
 "When an array object is printed or converted to a string, it is represented "
 "as ``array(typecode, initializer)``.  The *initializer* is omitted if the "
@@ -406,28 +405,28 @@ msgid ""
 "``from array import array``. Examples::"
 msgstr ""
 
-#: library/array.rst:253
+#: library/array.rst:257
 msgid "Module :mod:`struct`"
 msgstr ""
 
-#: library/array.rst:253
+#: library/array.rst:257
 msgid "Packing and unpacking of heterogeneous binary data."
 msgstr ""
 
-#: library/array.rst:257
+#: library/array.rst:261
 msgid "Module :mod:`xdrlib`"
 msgstr ""
 
-#: library/array.rst:256
+#: library/array.rst:260
 msgid ""
 "Packing and unpacking of External Data Representation (XDR) data as used in "
 "some remote procedure call systems."
 msgstr ""
 
-#: library/array.rst:259
+#: library/array.rst:263
 msgid "`NumPy <https://numpy.org/>`_"
 msgstr ""
 
-#: library/array.rst:260
+#: library/array.rst:264
 msgid "The NumPy package defines another array type."
 msgstr ""
