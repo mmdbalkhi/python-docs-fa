@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1324,8 +1324,7 @@ msgid ""
 "destination from the first short option string (e.g., ``-f`` implies ``f``)."
 msgstr ""
 
-#: library/optparse.rst:1123
-#: library/optparse.rst:1163
+#: library/optparse.rst:1123 library/optparse.rst:1163
 #: library/optparse.rst:1240
 msgid "Example::"
 msgstr ""
@@ -1585,8 +1584,7 @@ msgstr ""
 msgid "where the input parameters are"
 msgstr ""
 
-#: library/optparse.rst:1345
-#: library/optparse.rst:1664
+#: library/optparse.rst:1345 library/optparse.rst:1664
 msgid "``args``"
 msgstr ""
 

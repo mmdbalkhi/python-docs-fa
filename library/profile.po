@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -541,9 +541,7 @@ msgstr ""
 msgid "``'cumtime'``"
 msgstr ""
 
-#: library/profile.rst:414
-#: library/profile.rst:420
-#: library/profile.rst:434
+#: library/profile.rst:414 library/profile.rst:420 library/profile.rst:434
 msgid "N/A"
 msgstr ""
 
@@ -551,8 +549,7 @@ msgstr ""
 msgid "``'file'``"
 msgstr ""
 
-#: library/profile.rst:416
-#: library/profile.rst:418
+#: library/profile.rst:416 library/profile.rst:418
 msgid "file name"
 msgstr ""
 

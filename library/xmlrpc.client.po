@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -368,8 +368,7 @@ msgstr ""
 msgid "A working example follows. The server code::"
 msgstr ""
 
-#: library/xmlrpc.client.rst:294
-#: library/xmlrpc.client.rst:510
+#: library/xmlrpc.client.rst:294 library/xmlrpc.client.rst:510
 msgid "The client code for the preceding server::"
 msgstr ""
 
@@ -470,7 +469,7 @@ msgid ""
 msgstr ""
 
 #: library/xmlrpc.client.rst:381
-msgid "A string indicating the fault type."
+msgid "An int indicating the fault type."
 msgstr ""
 
 #: library/xmlrpc.client.rst:386

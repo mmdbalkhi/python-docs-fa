@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,102 +192,144 @@ msgid ""
 msgstr ""
 
 #: library/sysconfig.rst:114
+msgid "Return the default scheme name for the current platform."
+msgstr ""
+
+#: library/sysconfig.rst:116
+msgid ""
+"This function was previously named ``_get_default_scheme()`` and considered "
+"an implementation detail."
+msgstr ""
+
+#: library/sysconfig.rst:123
+msgid ""
+"Return a preferred scheme name for an installation layout specified by *key*."
+msgstr ""
+
+#: library/sysconfig.rst:125
+msgid "*key* must be either ``\"prefix\"``, ``\"home\"``, or ``\"user\"``."
+msgstr ""
+
+#: library/sysconfig.rst:127
+msgid ""
+"The return value is a scheme name listed in :func:`get_scheme_names`. It can "
+"be passed to :mod:`sysconfig` functions that take a *scheme* argument, such "
+"as :func:`get_paths`."
+msgstr ""
+
+#: library/sysconfig.rst:136
+msgid ""
+"Return a dict containing preferred scheme names on the current platform. "
+"Python implementers and redistributors may add their preferred schemes to "
+"the ``_INSTALL_SCHEMES`` module-level global value, and modify this function "
+"to return those scheme names, to e.g. provide different schemes for system "
+"and language package managers to use, so packages installed by either do not "
+"mix with those by the other."
+msgstr ""
+
+#: library/sysconfig.rst:143
+msgid ""
+"End users should not use this function, but :func:`get_default_scheme` and :"
+"func:`get_preferred_scheme()` instead."
+msgstr ""
+
+#: library/sysconfig.rst:151
 msgid ""
 "Return a tuple containing all path names currently supported in :mod:"
 "`sysconfig`."
 msgstr ""
 
-#: library/sysconfig.rst:120
+#: library/sysconfig.rst:157
 msgid ""
 "Return an installation path corresponding to the path *name*, from the "
 "install scheme named *scheme*."
 msgstr ""
 
-#: library/sysconfig.rst:123
+#: library/sysconfig.rst:160
 msgid ""
 "*name* has to be a value from the list returned by :func:`get_path_names`."
 msgstr ""
 
-#: library/sysconfig.rst:125
+#: library/sysconfig.rst:162
 msgid ""
 ":mod:`sysconfig` stores installation paths corresponding to each path name, "
 "for each platform, with variables to be expanded.  For instance the *stdlib* "
 "path for the *nt* scheme is: ``{base}/Lib``."
 msgstr ""
 
-#: library/sysconfig.rst:129
+#: library/sysconfig.rst:166
 msgid ""
 ":func:`get_path` will use the variables returned by :func:`get_config_vars` "
 "to expand the path.  All variables have default values for each platform so "
 "one may call this function and get the default value."
 msgstr ""
 
-#: library/sysconfig.rst:133
+#: library/sysconfig.rst:170
 msgid ""
 "If *scheme* is provided, it must be a value from the list returned by :func:"
 "`get_scheme_names`.  Otherwise, the default scheme for the current platform "
 "is used."
 msgstr ""
 
-#: library/sysconfig.rst:137
+#: library/sysconfig.rst:174
 msgid ""
 "If *vars* is provided, it must be a dictionary of variables that will update "
 "the dictionary return by :func:`get_config_vars`."
 msgstr ""
 
-#: library/sysconfig.rst:140
+#: library/sysconfig.rst:177
 msgid ""
 "If *expand* is set to ``False``, the path will not be expanded using the "
 "variables."
 msgstr ""
 
-#: library/sysconfig.rst:143
+#: library/sysconfig.rst:180
 msgid "If *name* is not found, raise a :exc:`KeyError`."
 msgstr ""
 
-#: library/sysconfig.rst:148
+#: library/sysconfig.rst:185
 msgid ""
 "Return a dictionary containing all installation paths corresponding to an "
 "installation scheme. See :func:`get_path` for more information."
 msgstr ""
 
-#: library/sysconfig.rst:151
+#: library/sysconfig.rst:188
 msgid ""
 "If *scheme* is not provided, will use the default scheme for the current "
 "platform."
 msgstr ""
 
-#: library/sysconfig.rst:154
+#: library/sysconfig.rst:191
 msgid ""
 "If *vars* is provided, it must be a dictionary of variables that will update "
 "the dictionary used to expand the paths."
 msgstr ""
 
-#: library/sysconfig.rst:157
+#: library/sysconfig.rst:194
 msgid "If *expand* is set to false, the paths will not be expanded."
 msgstr ""
 
-#: library/sysconfig.rst:159
+#: library/sysconfig.rst:196
 msgid ""
 "If *scheme* is not an existing scheme, :func:`get_paths` will raise a :exc:"
 "`KeyError`."
 msgstr ""
 
-#: library/sysconfig.rst:164
+#: library/sysconfig.rst:201
 msgid "Other functions"
 msgstr ""
 
-#: library/sysconfig.rst:168
+#: library/sysconfig.rst:205
 msgid ""
 "Return the ``MAJOR.MINOR`` Python version number as a string.  Similar to "
 "``'%d.%d' % sys.version_info[:2]``."
 msgstr ""
 
-#: library/sysconfig.rst:174
+#: library/sysconfig.rst:211
 msgid "Return a string that identifies the current platform."
 msgstr ""
 
-#: library/sysconfig.rst:176
+#: library/sysconfig.rst:213
 msgid ""
 "This is used mainly to distinguish platform-specific build directories and "
 "platform-specific built distributions.  Typically includes the OS name and "
@@ -296,99 +338,99 @@ msgid ""
 "version isn't particularly important."
 msgstr ""
 
-#: library/sysconfig.rst:182
+#: library/sysconfig.rst:219
 msgid "Examples of returned values:"
 msgstr ""
 
-#: library/sysconfig.rst:184
+#: library/sysconfig.rst:221
 msgid "linux-i586"
 msgstr ""
 
-#: library/sysconfig.rst:185
+#: library/sysconfig.rst:222
 msgid "linux-alpha (?)"
 msgstr ""
 
-#: library/sysconfig.rst:186
+#: library/sysconfig.rst:223
 msgid "solaris-2.6-sun4u"
 msgstr ""
 
-#: library/sysconfig.rst:188
+#: library/sysconfig.rst:225
 msgid "Windows will return one of:"
 msgstr ""
 
-#: library/sysconfig.rst:190
+#: library/sysconfig.rst:227
 msgid "win-amd64 (64bit Windows on AMD64, aka x86_64, Intel64, and EM64T)"
 msgstr ""
 
-#: library/sysconfig.rst:191
+#: library/sysconfig.rst:228
 msgid "win32 (all others - specifically, sys.platform is returned)"
 msgstr ""
 
-#: library/sysconfig.rst:193
+#: library/sysconfig.rst:230
 msgid "macOS can return:"
 msgstr ""
 
-#: library/sysconfig.rst:195
+#: library/sysconfig.rst:232
 msgid "macosx-10.6-ppc"
 msgstr ""
 
-#: library/sysconfig.rst:196
+#: library/sysconfig.rst:233
 msgid "macosx-10.4-ppc64"
 msgstr ""
 
-#: library/sysconfig.rst:197
+#: library/sysconfig.rst:234
 msgid "macosx-10.3-i386"
 msgstr ""
 
-#: library/sysconfig.rst:198
+#: library/sysconfig.rst:235
 msgid "macosx-10.4-fat"
 msgstr ""
 
-#: library/sysconfig.rst:200
+#: library/sysconfig.rst:237
 msgid ""
 "For other non-POSIX platforms, currently just returns :data:`sys.platform`."
 msgstr ""
 
-#: library/sysconfig.rst:205
+#: library/sysconfig.rst:242
 msgid ""
 "Return ``True`` if the running Python interpreter was built from source and "
 "is being run from its built location, and not from a location resulting from "
 "e.g. running ``make install`` or installing via a binary installer."
 msgstr ""
 
-#: library/sysconfig.rst:212
+#: library/sysconfig.rst:249
 msgid "Parse a :file:`config.h`\\-style file."
 msgstr ""
 
-#: library/sysconfig.rst:214
+#: library/sysconfig.rst:251
 msgid ""
 "*fp* is a file-like object pointing to the :file:`config.h`\\-like file."
 msgstr ""
 
-#: library/sysconfig.rst:216
+#: library/sysconfig.rst:253
 msgid ""
 "A dictionary containing name/value pairs is returned.  If an optional "
 "dictionary is passed in as the second argument, it is used instead of a new "
 "dictionary, and updated with the values read in the file."
 msgstr ""
 
-#: library/sysconfig.rst:223
+#: library/sysconfig.rst:260
 msgid "Return the path of :file:`pyconfig.h`."
 msgstr ""
 
-#: library/sysconfig.rst:227
+#: library/sysconfig.rst:264
 msgid "Return the path of :file:`Makefile`."
 msgstr ""
 
-#: library/sysconfig.rst:230
+#: library/sysconfig.rst:268
 msgid "Using :mod:`sysconfig` as a script"
 msgstr ""
 
-#: library/sysconfig.rst:232
+#: library/sysconfig.rst:270
 msgid "You can use :mod:`sysconfig` as a script with Python's *-m* option:"
 msgstr ""
 
-#: library/sysconfig.rst:258
+#: library/sysconfig.rst:296
 msgid ""
 "This call will print in the standard output the information returned by :"
 "func:`get_platform`, :func:`get_python_version`, :func:`get_path` and :func:"

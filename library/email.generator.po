@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,8 +140,7 @@ msgid ""
 "rendering them RFC-compliant."
 msgstr ""
 
-#: library/email.generator.rst:104
-#: library/email.generator.rst:197
+#: library/email.generator.rst:104 library/email.generator.rst:197
 msgid ""
 "If *unixfrom* is ``True``, print the envelope header delimiter used by the "
 "Unix mailbox format (see :mod:`mailbox`) before the first of the :rfc:`5322` "
@@ -150,8 +149,7 @@ msgid ""
 "subparts, no envelope header is ever printed."
 msgstr ""
 
-#: library/email.generator.rst:110
-#: library/email.generator.rst:203
+#: library/email.generator.rst:110 library/email.generator.rst:203
 msgid ""
 "If *linesep* is not ``None``, use it as the separator character between all "
 "the lines of the flattened message.  If *linesep* is ``None`` (the default), "

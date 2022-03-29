@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -395,15 +395,15 @@ msgstr ""
 msgid "``upgrade_deps`` -- Update the base venv modules to the latest on PyPI"
 msgstr ""
 
-#: library/venv.rst:259
+#: library/venv.rst:260
 msgid "Added the ``with_pip`` parameter"
 msgstr ""
 
-#: library/venv.rst:262
+#: library/venv.rst:263
 msgid "Added the ``prompt`` parameter"
 msgstr ""
 
-#: library/venv.rst:136
+#: library/venv.rst:266
 msgid "Added the ``upgrade_deps`` parameter"
 msgstr ""
 
@@ -549,24 +549,24 @@ msgstr ""
 msgid "There is also a module-level convenience function:"
 msgstr ""
 
-#: library/venv.rst:254
+#: library/venv.rst:255
 msgid ""
 "Create an :class:`EnvBuilder` with the given keyword arguments, and call "
 "its :meth:`~EnvBuilder.create` method with the *env_dir* argument."
 msgstr ""
 
-#: library/venv.rst:266
+#: library/venv.rst:270
 msgid "An example of extending ``EnvBuilder``"
 msgstr ""
 
-#: library/venv.rst:268
+#: library/venv.rst:272
 msgid ""
 "The following script shows how to extend :class:`EnvBuilder` by implementing "
 "a subclass which installs setuptools and pip into a created virtual "
 "environment::"
 msgstr ""
 
-#: library/venv.rst:487
+#: library/venv.rst:491
 msgid ""
 "This script is also available for download `online <https://gist.github.com/"
 "vsajip/4673395>`_."

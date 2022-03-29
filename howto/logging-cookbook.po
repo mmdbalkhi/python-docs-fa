@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,7 +169,7 @@ msgstr ""
 #: howto/logging-cookbook.rst:334
 msgid ""
 "Sometimes you have to get your logging handlers to do their work without "
-"blocking the thread you're logging from. This is common in Web applications, "
+"blocking the thread you're logging from. This is common in web applications, "
 "though of course it also occurs in other scenarios."
 msgstr ""
 
@@ -963,8 +963,7 @@ msgstr ""
 msgid "If the above script is run, it prints:"
 msgstr ""
 
-#: howto/logging-cookbook.rst:1785
-#: howto/logging-cookbook.rst:1834
+#: howto/logging-cookbook.rst:1785 howto/logging-cookbook.rst:1834
 msgid ""
 "Note that the order of items might be different according to the version of "
 "Python used."

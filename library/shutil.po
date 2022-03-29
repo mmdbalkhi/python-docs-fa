@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,8 +91,7 @@ msgid ""
 "link will be created instead of copying the file *src* points to."
 msgstr ""
 
-#: library/shutil.rst:176
-#: library/shutil.rst:207
+#: library/shutil.rst:176 library/shutil.rst:207
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``shutil.copyfile`` with "
 "arguments ``src``, ``dst``."
@@ -110,9 +109,7 @@ msgid ""
 "subclass of the latter, this change is backward compatible."
 msgstr ""
 
-#: library/shutil.rst:184
-#: library/shutil.rst:281
-#: library/shutil.rst:369
+#: library/shutil.rst:184 library/shutil.rst:281 library/shutil.rst:369
 msgid ""
 "Platform-specific fast-copy syscalls may be used internally in order to copy "
 "the file more efficiently. See :ref:`shutil-platform-dependent-efficient-"

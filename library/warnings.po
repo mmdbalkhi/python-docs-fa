@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -403,7 +403,9 @@ msgid ""
 msgstr ""
 
 #: library/warnings.rst:232
-msgid "In debug builds, the list of default warning filters is empty."
+msgid ""
+"In a :ref:`debug build <debug-build>`, the list of default warning filters "
+"is empty."
 msgstr ""
 
 #: library/warnings.rst:234

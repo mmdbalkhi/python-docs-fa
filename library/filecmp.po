@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,14 +215,22 @@ msgstr ""
 
 #: library/filecmp.rst:178
 msgid ""
-"A dictionary mapping names in :attr:`common_dirs` to :class:`dircmp` objects."
+"A dictionary mapping names in :attr:`common_dirs` to :class:`dircmp` "
+"instances (or MyDirCmp instances if this instance is of type MyDirCmp, a "
+"subclass of :class:`dircmp`)."
 msgstr ""
 
-#: library/filecmp.rst:185
+#: library/filecmp.rst:182
+msgid ""
+"Previously entries were always :class:`dircmp` instances. Now entries are "
+"the same type as *self*, if *self* is a subclass of :class:`dircmp`."
+msgstr ""
+
+#: library/filecmp.rst:191
 msgid "List of directories ignored by :class:`dircmp` by default."
 msgstr ""
 
-#: library/filecmp.rst:188
+#: library/filecmp.rst:194
 msgid ""
 "Here is a simplified example of using the ``subdirs`` attribute to search "
 "recursively through two directories to show common different files::"

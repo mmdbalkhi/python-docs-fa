@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-28 16:11+0430\n"
+"POT-Creation-Date: 2022-03-29 21:09+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,13 +179,11 @@ msgstr ""
 msgid "``=``"
 msgstr ""
 
-#: library/struct.rst:138
-#: library/struct.rst:142
+#: library/struct.rst:138 library/struct.rst:142
 msgid "standard"
 msgstr ""
 
-#: library/struct.rst:138
-#: library/struct.rst:142
+#: library/struct.rst:138 library/struct.rst:142
 msgid "none"
 msgstr ""
 
@@ -337,8 +335,7 @@ msgstr ""
 msgid "bytes of length 1"
 msgstr ""
 
-#: library/struct.rst:200
-#: library/struct.rst:204
+#: library/struct.rst:200 library/struct.rst:204
 msgid "1"
 msgstr ""
 
@@ -350,12 +347,8 @@ msgstr ""
 msgid ":c:type:`signed char`"
 msgstr ""
 
-#: library/struct.rst:202
-#: library/struct.rst:208
-#: library/struct.rst:212
-#: library/struct.rst:216
-#: library/struct.rst:220
-#: library/struct.rst:225
+#: library/struct.rst:202 library/struct.rst:208 library/struct.rst:212
+#: library/struct.rst:216 library/struct.rst:220 library/struct.rst:225
 #: library/struct.rst:237
 msgid "integer"
 msgstr ""
@@ -372,11 +365,8 @@ msgstr ""
 msgid ":c:type:`unsigned char`"
 msgstr ""
 
-#: library/struct.rst:206
-#: library/struct.rst:210
-#: library/struct.rst:214
-#: library/struct.rst:218
-#: library/struct.rst:220
+#: library/struct.rst:206 library/struct.rst:210 library/struct.rst:214
+#: library/struct.rst:218 library/struct.rst:220
 msgid "\\(2)"
 msgstr ""
 
@@ -404,8 +394,7 @@ msgstr ""
 msgid ":c:type:`short`"
 msgstr ""
 
-#: library/struct.rst:208
-#: library/struct.rst:227
+#: library/struct.rst:208 library/struct.rst:227
 msgid "2"
 msgstr ""
 
@@ -425,9 +414,7 @@ msgstr ""
 msgid ":c:type:`int`"
 msgstr ""
 
-#: library/struct.rst:212
-#: library/struct.rst:216
-#: library/struct.rst:229
+#: library/struct.rst:212 library/struct.rst:216 library/struct.rst:229
 msgid "4"
 msgstr ""
 
@@ -463,8 +450,7 @@ msgstr ""
 msgid ":c:type:`long long`"
 msgstr ""
 
-#: library/struct.rst:220
-#: library/struct.rst:231
+#: library/struct.rst:220 library/struct.rst:231
 msgid "8"
 msgstr ""
 
@@ -504,13 +490,11 @@ msgstr ""
 msgid "\\(6)"
 msgstr ""
 
-#: library/struct.rst:229
-#: library/struct.rst:231
+#: library/struct.rst:229 library/struct.rst:231
 msgid "float"
 msgstr ""
 
-#: library/struct.rst:229
-#: library/struct.rst:231
+#: library/struct.rst:229 library/struct.rst:231
 msgid "\\(4)"
 msgstr ""
 
