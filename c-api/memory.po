@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -384,7 +384,7 @@ msgstr ""
 #: c-api/memory.rst:308
 msgid ""
 "There is no guarantee that the memory returned by these allocators can be "
-"successfully casted to a Python object when intercepting the allocating "
+"successfully cast to a Python object when intercepting the allocating "
 "functions in this domain by the methods described in the :ref:`Customize "
 "Memory Allocators <customize-memory-allocators>` section."
 msgstr ""
@@ -547,8 +547,8 @@ msgstr ""
 
 #: c-api/memory.rst:405
 msgid ""
-"Structure used to describe a memory block allocator. The structure has four "
-"fields:"
+"Structure used to describe a memory block allocator. The structure has the "
+"following fields:"
 msgstr ""
 
 #: c-api/memory.rst:626

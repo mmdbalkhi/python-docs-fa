@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: c-api/bytes.rst:8
 msgid ""
 "These functions raise :exc:`TypeError` when expecting a bytes parameter and "
-"are called with a non-bytes parameter."
+"called with a non-bytes parameter."
 msgstr ""
 
 #: c-api/bytes.rst:16

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,10 +139,10 @@ msgstr ""
 
 #: howto/regex.rst:92
 msgid ""
-"Metacharacters are not active inside classes.  For example, ``[akm$]`` will "
-"match any of the characters ``'a'``, ``'k'``, ``'m'``, or ``'$'``; ``'$'`` "
-"is usually a metacharacter, but inside a character class it's stripped of "
-"its special nature."
+"Metacharacters (except ``\\``) are not active inside classes.  For example, "
+"``[akm$]`` will match any of the characters ``'a'``, ``'k'``, ``'m'``, or "
+"``'$'``; ``'$'`` is usually a metacharacter, but inside a character class "
+"it's stripped of its special nature."
 msgstr ""
 
 #: howto/regex.rst:97

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1954,7 +1954,7 @@ msgstr ""
 
 #: c-api/init.rst:1728
 msgid ""
-"A freed key becomes a dangling pointer, you should reset the key to `NULL`."
+"A freed key becomes a dangling pointer. You should reset the key to `NULL`."
 msgstr ""
 
 #: c-api/init.rst:1733
