@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,7 +180,7 @@ msgstr ""
 
 #: library/os.rst:116
 msgid ""
-"On Unix, :func:`os.device_encoding` returns ``'UTF-8'``. rather than the "
+"On Unix, :func:`os.device_encoding` returns ``'UTF-8'`` rather than the "
 "device encoding."
 msgstr ""
 

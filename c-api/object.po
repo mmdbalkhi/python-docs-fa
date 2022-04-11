@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,8 +104,8 @@ msgstr ""
 
 #: c-api/object.rst:96
 msgid ""
-"If *v* is ``NULL``, the attribute is deleted, however this feature is "
-"deprecated in favour of using :c:func:`PyObject_DelAttrString`."
+"If *v* is ``NULL``, the attribute is deleted, but this feature is deprecated "
+"in favour of using :c:func:`PyObject_DelAttrString`."
 msgstr ""
 
 #: c-api/object.rst:102
@@ -300,9 +300,9 @@ msgid ""
 "type of object *o*. On failure, raises :exc:`SystemError` and returns "
 "``NULL``.  This is equivalent to the Python expression ``type(o)``. This "
 "function increments the reference count of the return value. There's really "
-"no reason to use this function instead of the common expression ``o-"
-">ob_type``, which returns a pointer of type :c:type:`PyTypeObject*`, except "
-"when the incremented reference count is needed."
+"no reason to use this function instead of the :c:func:`Py_TYPE()` function, "
+"which returns a pointer of type :c:type:`PyTypeObject*`, except when the "
+"incremented reference count is needed."
 msgstr ""
 
 #: c-api/object.rst:301

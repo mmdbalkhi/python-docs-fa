@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-30 12:36+0430\n"
+"POT-Creation-Date: 2022-04-11 22:00+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,7 +200,7 @@ msgid ""
 "<utf8-mode>`."
 msgstr ""
 
-#: c-api/sys.rst:208
+#: c-api/sys.rst:166
 msgid ""
 "The function now uses the UTF-8 encoding on Windows if :c:data:"
 "`Py_LegacyWindowsFSEncodingFlag` is zero;"
@@ -218,7 +218,7 @@ msgstr ""
 msgid ""
 "Return a pointer to a newly allocated byte string, use :c:func:`PyMem_Free` "
 "to free the memory. Return ``NULL`` on encoding error or memory allocation "
-"error"
+"error."
 msgstr ""
 
 #: c-api/sys.rst:182
@@ -237,6 +237,12 @@ msgstr ""
 msgid ""
 "The :c:func:`PyUnicode_EncodeFSDefault` and :c:func:`PyUnicode_EncodeLocale` "
 "functions."
+msgstr ""
+
+#: c-api/sys.rst:208
+msgid ""
+"The function now uses the UTF-8 encoding on Windows if :c:data:"
+"`Py_LegacyWindowsFSEncodingFlag` is zero."
 msgstr ""
 
 #: c-api/sys.rst:216
@@ -387,7 +393,7 @@ msgstr ""
 #: c-api/sys.rst:340
 msgid ""
 "Append the callable *hook* to the list of active auditing hooks. Return zero "
-"for success and non-zero on failure. If the runtime has been initialized, "
+"on success and non-zero on failure. If the runtime has been initialized, "
 "also set an error on failure. Hooks added through this API are called for "
 "all interpreters created by the runtime."
 msgstr ""
