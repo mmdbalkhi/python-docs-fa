@@ -135,39 +135,40 @@
  اصطلاح                       ترجمه پیشنهادی
 ========================== ===========================================
 -like
-abstract data type
-argument
-backslash
-bound
-bug
-built-in
-call stack
-debugging
-deep copy
-double quote
-e.g.
-garbage collector
-identifier
-immutable
-installer
-interpreter
-library
-list comprehension
-little-endian, big-endian
-mutable
-namespace
-parameter
-prompt
-raise
-regular expression
-return
-simple quote
-socket
-statement
-subprocess
-thread
-underscore
-expression
+abstract data type          دیتا تایپ های انتزاعی
+argument                    *argument*
+backslash                   *backslash(\\)*
+bound                       محدوده
+bug                         باگ
+built-in                    توکار/داخلی
+call stack                  *call stack*
+debugging                   اشکال زدایی
+deep copy                   *deep copy*
+double-quote                *double-quote(")*
+e.g.                        به عنوان مثال
+garbage collector           زباله جمع کن
+identifier                  
+immutable                   تغییرناپذیر
+installer                   نصاب
+interpreter                 مترجم
+library                     کتابخانه
+list comprehension          
+little-endian, big-endian   
+mutable                     تغییر پذیر
+namespace                   *namespace*
+parameter                   پارامتر                    
+prompt                      *prompt*
+raise                       *raise*
+regular expression          *regular expression*
+return                      برگشت
+simple quote                *simple quote(')*
+socket                      *socket*
+statement                   
+subprocess                  *subprocess*
+thread                      رشته
+underscore                  *underscore(_)*
+expression                  عبارت   
+
 ========================== ===========================================
 
 
