@@ -131,29 +131,29 @@
 برای اینکه به راحتی بفهمید که چگونه یک اصطلاح قبلاً در اسناد ما ترجمه شده است، می توانید از آن استفاده کنید
 `find_in_po.py <https://gist.github.com/JulienPalard/c430ac23446da2081060ab17bf006ac1>`_.
 
-========================== ===========================================
+========================== =============================================================================================================
  اصطلاح                       ترجمه پیشنهادی
-========================== ===========================================
+========================== =============================================================================================================
 -like
-abstract data type          دیتا تایپ های انتزاعی
-argument                    *argument*
+abstract data type          `دیتا تایپ های انتزاعی <https://docs.python.org/3/library/collections.html#collections.abc.MutableMapping>`_
+argument                    *argument* `<https://docs.python.org/3/glossary.html#term-argument>`_
 backslash                   *backslash(\\)*
 bound                       محدوده
 bug                         باگ
-built-in                    توکار/داخلی
+built-in                    `توکار/داخلی <https://docs.python.org/3/library/functions.html>`_
 call stack                  *call stack*
 debugging                   اشکال زدایی
-deep copy                   *deep copy*
+deep copy                   `deep copy <https://docs.python.org/3/library/copy.html#copy.deepcopy>`_
 double-quote                *double-quote(")*
 e.g.                        به عنوان مثال
 garbage collector           زباله جمع کن
-identifier                  
+identifier                  `identifier <https://docs.python.org/3/reference/lexical_analysis.html#identifiers>`_
 immutable                   تغییرناپذیر
 installer                   نصاب
 interpreter                 مترجم
 library                     کتابخانه
-list comprehension          
-little-endian, big-endian   
+list comprehension          *list comprehension*
+little-endian, big-endian   `اصطلاح ریاضیاتی <https://en.wikipedia.org/wiki/Endianness>`_
 mutable                     تغییر پذیر
 namespace                   *namespace*
 parameter                   پارامتر                    
@@ -163,13 +163,13 @@ regular expression          *regular expression*
 return                      برگشت
 simple quote                *simple quote(')*
 socket                      *socket*
-statement                   
+statement                   `statement <https://docs.python.org/3/reference/simple_stmts.html>`_
 subprocess                  *subprocess*
-thread                      رشته
+thread                      `رشته‌های تردد <https://docs.python.org/3/library/threading.html>`_
 underscore                  *underscore(_)*
 expression                  عبارت   
 
-========================== ===========================================
+========================== =============================================================================================================
 
 
 git diff ها را ساده کنید.
