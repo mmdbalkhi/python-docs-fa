@@ -238,4 +238,4 @@ Git diff ها اغلب مملو از تغییرات بی‌فایده شماره
 
 .. code-block:: bash
 
-  make
+  make build
