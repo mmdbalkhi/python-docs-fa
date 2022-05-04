@@ -56,8 +56,27 @@ else
     CP_CMD := cp
 endif
 
-.PHONY: all
-all: ensure_prerequisites
+.PHONY: help
+
+help:
+	@echo "Usage: make [TARGET]"
+	@echo "TARGET: ensure_prerequisites, serve, progress, todo, wrap, spell, verifs, merge, fuzzy"
+	@echo
+	@echo " build: build the documentation, using the Makefile of the Python documentation"
+	@echo " ensure_prerequisites: ensure that the required tools are installed"
+	@echo " serve: serve the documentation locally"
+	@echo " progress: compute the current progress"
+	@echo " todo: list remaining tasks"
+	@echo " wrap: check for wrapping"
+	@echo " spell: check for spelling"
+	@echo " verifs: check for correctness"
+	@echo " merge: merge pot from upstream"
+	@echo " fuzzy: find fuzzy strings"
+	@echo " clean: clean the build directory"
+	@echo " help: display this help"
+	@echo
+
+build: ensure_prerequisites
 	git -C $(CPYTHON_PATH) checkout $(CPYTHON_CURRENT_COMMIT)
 	mkdir -p locales/$(LANGUAGE)/LC_MESSAGES/
 	$(CP_CMD) -u --parents *.po */*.po locales/$(LANGUAGE)/LC_MESSAGES/
@@ -163,6 +182,8 @@ merge: ensure_prerequisites
 	rm -fr $(CPYTHON_PATH)/pot/
 	sed -i 's|^#: .*Doc/|#: |' *.po */*.po
 	powrap -m
+	sed -i 's/^"Language: /"Language: fa/' *.po */*.po
+
 	@printf "\n%s %s\n" "Replace CPYTHON_CURRENT_COMMIT in Makefile by: " $(shell git -C $(CPYTHON_PATH) rev-parse HEAD)
 	@printf 'To add, you can use:\n  git status -s | grep "^ M .*\.po" | cut -d" " -f3 | while read -r file; do if [ $$(git diff "$$file" | wc -l) -gt 13 ]; then git add "$$file"; fi ; done\n'
 
